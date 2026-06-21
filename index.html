@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0906">
+  <meta name="description" content="Honeycomb Oasis 3X Rust server information, live weekly wipe-window countdown, server rules, raid schedule, purge details, and Discord community link.">
+  <title>Honeycomb Oasis 3X | Live Wipe Window</title>
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
+  <link rel="apple-touch-icon" href="logo-192.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:title" content="Honeycomb Oasis 3X">
+  <meta property="og:description" content="Live weekly wipe-window countdown, rules, raid information, and Discord access.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="poster.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Honeycomb Oasis 3X home">
+        <span class="brand-mark" aria-hidden="true">🐝</span>
+        <span class="brand-copy">
+          <small>Rust 3X Server</small>
+          <strong>Honeycomb Oasis</strong>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#timer">Timer</a>
+        <a href="#rules">Rules</a>
+        <a href="#raid-info">Raid Info</a>
+        <a
+          class="discord-button"
+          href="https://discord.gg/hqzcxeZHY"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Join the Honeycomb Oasis Discord server"
+        >
+          <span>Join Discord</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container">
+        <figure class="poster">
+          <img
+            src="poster.webp"
+            alt="Honeycomb Oasis 3X Rust server poster showing the honeycomb oasis theme, server rules, raid weekend schedule, and purge information"
+            width="1536"
+            height="864"
+          >
+        </figure>
+
+        <div class="hero-grid">
+          <article class="panel intro-panel">
+            <span class="eyebrow">Welcome to the Hive</span>
+            <h1 id="page-title">HONEYCOMB <span class="gold-text">OASIS 3X</span></h1>
+            <p class="lead">
+              A community built on respect, competition, and brotherhood.
+              Team up, build your hive, protect your territory, and become a legend of the oasis.
+            </p>
+
+            <div class="actions">
+              <a class="primary-button" href="#timer">View Live Timer</a>
+              <a class="secondary-button" href="#rules">Read Server Rules</a>
+              <a
+                class="discord-button"
+                href="https://discord.gg/hqzcxeZHY"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+          <span>Join Discord</span>
+        </a>
+            </div>
+
+            <div class="quick-stats" aria-label="Server highlights">
+              <div class="stat">
+                <span>Server</span>
+                <strong>Rust 3X</strong>
+              </div>
+              <div class="stat">
+                <span>PvP</span>
+                <strong>Monuments Only</strong>
+              </div>
+              <div class="stat">
+                <span>Weekly Window</span>
+                <strong>Friday → Monday</strong>
+              </div>
+            </div>
+          </article>
+
+          <aside class="panel timer-panel" id="timer" aria-labelledby="timer-title">
+            <div class="timer-header">
+              <h2 id="timer-title">Wipe Window Timer</h2>
+              <div id="status" class="status closed" role="status" aria-live="polite">Checking</div>
+            </div>
+
+            <p id="timer-copy" class="timer-copy">Calculating the next window...</p>
+            <p id="target" class="target">Friday at 7:30 AM Eastern Time</p>
+
+            <div class="countdown" aria-label="Countdown">
+              <div class="time-unit">
+                <span id="days" class="time-number">00</span>
+                <span class="time-label">Days</span>
+              </div>
+              <div class="time-unit">
+                <span id="hours" class="time-number">00</span>
+                <span class="time-label">Hours</span>
+              </div>
+              <div class="time-unit">
+                <span id="minutes" class="time-number">00</span>
+                <span class="time-label">Minutes</span>
+              </div>
+              <div class="time-unit">
+                <span id="seconds" class="time-number">00</span>
+                <span class="time-label">Seconds</span>
+              </div>
+            </div>
+
+            <div class="schedule-grid">
+              <div class="schedule-card">
+                <span>Window Opens</span>
+                <strong>Friday — 7:30 AM ET</strong>
+              </div>
+              <div class="schedule-card">
+                <span>Window Closes</span>
+                <strong>Monday — 7:30 AM ET</strong>
+              </div>
+              <div class="schedule-card">
+                <span>Final 7 Days</span>
+                <strong>24/7 Raiding</strong>
+              </div>
+              <div class="schedule-card">
+                <span>Server Time Zone</span>
+                <strong>Eastern Time</strong>
+              </div>
+            </div>
+
+            <p id="current-time" class="current-time">Current Eastern time: loading...</p>
+
+            <noscript>
+              JavaScript is required for the live countdown. The weekly window runs Friday at 7:30 AM ET through Monday at 7:30 AM ET.
+            </noscript>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rules" aria-labelledby="rules-title">
+      <div class="container">
+        <h2 class="section-heading" id="rules-title">Core Server Rules</h2>
+        <p class="section-copy">
+          Compete hard, play fair, and respect the community. These rules keep the server competitive without ruining the experience for everyone else.
+        </p>
+
+        <div class="cards">
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">🤝</div>
+            <h3>Respect Everyone</h3>
+            <p>Treat every player with respect, whether they are allies, rivals, new players, or experienced teams.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">⚔️</div>
+            <h3>Play Fair</h3>
+            <p>No cheating, exploiting, or glitch abuse. Fair competition is mandatory.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">🐝</div>
+            <h3>Work Together</h3>
+            <p>Team up, build your hive, stay organized, and protect your territory.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">🎁</div>
+            <h3>Have Fun, Earn Big</h3>
+            <p>Enjoy the grind, take part in the action, and earn rewards through active play.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">💀</div>
+            <h3>Fight at Monuments</h3>
+            <p>PvP is allowed at monuments only, following the rule shown on the server poster.</p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">🔥</div>
+            <h3>Survive the Purge</h3>
+            <p>The final seven days are fully raidable, with 24/7 raiding active.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="raid-info" aria-labelledby="raid-title">
+      <div class="container">
+        <h2 class="section-heading" id="raid-title">Raid and Wipe Information</h2>
+        <p class="section-copy">
+          The standard weekly window opens Friday at 7:30 AM Eastern Time and closes Monday at 7:30 AM Eastern Time. During the final seven days, raiding becomes active around the clock.
+        </p>
+
+        <div class="raid-banner">
+          <div>
+            <h3>Build your hive. Fight for your territory. Become a legend.</h3>
+            <p>Prepare before the window opens, coordinate with your team, and protect what you built.</p>
+          </div>
+          <a class="primary-button" href="#timer">Check the Timer</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="community-title">
+      <div class="container">
+        <div class="community">
+          <h2 id="community-title">Join the Honeycomb Oasis Community</h2>
+          <p>
+            Get announcements, wipe updates, server information, support, and community discussion directly in Discord.
+          </p>
+          <a
+            class="discord-button"
+            href="https://discord.gg/hqzcxeZHY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <span>Join Discord</span>
+        </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Honeycomb Oasis 3X</strong> — Survive together. Dominate the oasis.</p>
+      <p>Unofficial community server page. Rust is a trademark of Facepunch Studios.</p>
+    </div>
+  </footer>
+
+  <script src="timer.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace the address below after your GitHub Pages link is created.
+Sitemap: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY/sitemap.xml

@@ -1,0 +1,22 @@
+{
+  "name": "Honeycomb Oasis 3X",
+  "short_name": "Honeycomb 3X",
+  "description": "Honeycomb Oasis 3X Rust server timer, rules, raid information, and Discord access.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080705",
+  "theme_color": "#0b0906",
+  "icons": [
+    {
+      "src": "logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
