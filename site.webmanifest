@@ -1,7 +1,7 @@
 {
   "name": "Honeycomb Oasis 3X",
   "short_name": "Honeycomb 3X",
-  "description": "Honeycomb Oasis 3X Rust server timer, rules, raid information, and Discord access.",
+  "description": "Honeycomb Oasis 3X community server website.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
