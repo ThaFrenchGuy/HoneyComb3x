@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0906">
-  <meta name="description" content="Honeycomb Oasis 3X Rust server information, live weekly wipe-window countdown, server rules, raid schedule, purge details, and Discord community link.">
-  <title>Honeycomb Oasis 3X | Live Wipe Window</title>
+  <meta name="description" content="Honeycomb Oasis 3X Rust server rules, live Raid Weekend countdown, PvE and PvP rules, Offline Protection details, Purge Week information, and Discord access.">
+  <title>Honeycomb Oasis 3X | Rules & Raid Weekend Timer</title>
 
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
   <link rel="apple-touch-icon" href="logo-192.png">
   <link rel="manifest" href="site.webmanifest">
+
   <meta property="og:title" content="Honeycomb Oasis 3X">
-  <meta property="og:description" content="Live weekly wipe-window countdown, rules, raid information, and Discord access.">
+  <meta property="og:description" content="Official server rules, live Raid Weekend countdown, Purge Week information, and Discord access.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="poster.webp">
   <meta name="twitter:card" content="summary_large_image">
@@ -32,9 +33,9 @@
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#timer">Timer</a>
+        <a href="#timer">Raid Timer</a>
         <a href="#rules">Rules</a>
-        <a href="#raid-info">Raid Info</a>
+        <a href="#purge">Purge Week</a>
         <a
           class="discord-button"
           href="https://discord.gg/hqzcxeZHY"
@@ -42,6 +43,7 @@
           rel="noopener noreferrer"
           aria-label="Join the Honeycomb Oasis Discord server"
         >
+          <span class="discord-icon" aria-hidden="true">◉</span>
           <span>Join Discord</span>
         </a>
       </nav>
@@ -54,7 +56,7 @@
         <figure class="poster">
           <img
             src="poster.webp"
-            alt="Honeycomb Oasis 3X Rust server poster showing the honeycomb oasis theme, server rules, raid weekend schedule, and purge information"
+            alt="Honeycomb Oasis 3X Rust server poster"
             width="1536"
             height="864"
           >
@@ -65,49 +67,57 @@
             <span class="eyebrow">Welcome to the Hive</span>
             <h1 id="page-title">HONEYCOMB <span class="gold-text">OASIS 3X</span></h1>
             <p class="lead">
-              A community built on respect, competition, and brotherhood.
-              Team up, build your hive, protect your territory, and become a legend of the oasis.
+              A PvE-focused Rust server with controlled PvP zones, scheduled Raid Weekends,
+              Zorp Offline Protection, and a full Purge Week before wipe.
             </p>
 
             <div class="actions">
-              <a class="primary-button" href="#timer">View Live Timer</a>
-              <a class="secondary-button" href="#rules">Read Server Rules</a>
+              <a class="primary-button" href="#timer">View Raid Timer</a>
+              <a class="secondary-button" href="#rules">Read All Rules</a>
               <a
                 class="discord-button"
                 href="https://discord.gg/hqzcxeZHY"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-          <span>Join Discord</span>
-        </a>
+                <span class="discord-icon" aria-hidden="true">◉</span>
+                <span>Join Discord</span>
+              </a>
             </div>
 
             <div class="quick-stats" aria-label="Server highlights">
               <div class="stat">
-                <span>Server</span>
-                <strong>Rust 3X</strong>
+                <span>Main Map</span>
+                <strong>PvE World</strong>
               </div>
               <div class="stat">
-                <span>PvP</span>
-                <strong>Monuments Only</strong>
+                <span>PvP Zones</span>
+                <strong>Monuments + Hive Arena</strong>
               </div>
               <div class="stat">
-                <span>Weekly Window</span>
+                <span>Raid Weekend</span>
                 <strong>Friday → Monday</strong>
+              </div>
+              <div class="stat">
+                <span>Offline Protection</span>
+                <strong>Zorp — Up to 24 Hours</strong>
               </div>
             </div>
           </article>
 
           <aside class="panel timer-panel" id="timer" aria-labelledby="timer-title">
             <div class="timer-header">
-              <h2 id="timer-title">Wipe Window Timer</h2>
+              <div>
+                <span class="panel-kicker">Live Schedule</span>
+                <h2 id="timer-title">Raid Weekend Timer</h2>
+              </div>
               <div id="status" class="status closed" role="status" aria-live="polite">Checking</div>
             </div>
 
-            <p id="timer-copy" class="timer-copy">Calculating the next window...</p>
+            <p id="timer-copy" class="timer-copy">Calculating the next Raid Weekend...</p>
             <p id="target" class="target">Friday at 7:30 AM Eastern Time</p>
 
-            <div class="countdown" aria-label="Countdown">
+            <div class="countdown" aria-label="Countdown to Raid Weekend schedule change">
               <div class="time-unit">
                 <span id="days" class="time-number">00</span>
                 <span class="time-label">Days</span>
@@ -128,75 +138,161 @@
 
             <div class="schedule-grid">
               <div class="schedule-card">
-                <span>Window Opens</span>
-                <strong>Friday — 7:30 AM ET</strong>
+                <span>Raiding Opens</span>
+                <strong>Friday — 7:30 AM EST</strong>
               </div>
               <div class="schedule-card">
-                <span>Window Closes</span>
-                <strong>Monday — 7:30 AM ET</strong>
+                <span>Raiding Closes</span>
+                <strong>Monday — 7:30 AM EST</strong>
               </div>
               <div class="schedule-card">
-                <span>Final 7 Days</span>
-                <strong>24/7 Raiding</strong>
+                <span>Purge Week</span>
+                <strong>Final 7 Days — 24/7</strong>
               </div>
               <div class="schedule-card">
-                <span>Server Time Zone</span>
-                <strong>Eastern Time</strong>
+                <span>Zorp Protection</span>
+                <strong>Maximum 24 Hours</strong>
               </div>
+            </div>
+
+            <div class="timer-note">
+              <strong>Important:</strong> Players with active Zorp Offline Protection remain protected during Raid Weekend and Purge Week.
             </div>
 
             <p id="current-time" class="current-time">Current Eastern time: loading...</p>
 
             <noscript>
-              JavaScript is required for the live countdown. The weekly window runs Friday at 7:30 AM ET through Monday at 7:30 AM ET.
+              JavaScript is required for the live countdown. Raid Weekend runs Friday at 7:30 AM EST through Monday at 7:30 AM EST.
             </noscript>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="section" id="rules" aria-labelledby="rules-title">
+    <section class="section rule-section" id="rules" aria-labelledby="rules-title">
       <div class="container">
-        <h2 class="section-heading" id="rules-title">Core Server Rules</h2>
+        <span class="section-label">Official Rules</span>
+        <h2 class="section-heading" id="rules-title">Respect the Hive. Play Fair.</h2>
         <p class="section-copy">
-          Compete hard, play fair, and respect the community. These rules keep the server competitive without ruining the experience for everyone else.
+          The main map is PvE. PvP is limited to approved zones, raiding follows the server schedule,
+          and every player is responsible for understanding these rules before playing.
         </p>
 
-        <div class="cards">
-          <article class="info-card">
-            <div class="card-icon" aria-hidden="true">🤝</div>
-            <h3>Respect Everyone</h3>
-            <p>Treat every player with respect, whether they are allies, rivals, new players, or experienced teams.</p>
+        <div class="rule-grid">
+          <article class="rule-card">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">🌿</span>
+              <div>
+                <span class="rule-number">01</span>
+                <h3>PvE World</h3>
+              </div>
+            </div>
+            <ul>
+              <li>The main map is PvE.</li>
+              <li>No killing, raiding, or damaging player bases.</li>
+              <li>No stealing from players.</li>
+              <li>Respect other players' builds and space.</li>
+              <li>Ask permission before building near others.</li>
+              <li>Do not build onto or modify another player's base.</li>
+            </ul>
           </article>
 
-          <article class="info-card">
-            <div class="card-icon" aria-hidden="true">⚔️</div>
-            <h3>Play Fair</h3>
-            <p>No cheating, exploiting, or glitch abuse. Fair competition is mandatory.</p>
+          <article class="rule-card danger-card">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">⚔️</span>
+              <div>
+                <span class="rule-number">02</span>
+                <h3>PvP Zones</h3>
+              </div>
+            </div>
+            <ul>
+              <li>PvP is only allowed at Monuments and the Hive Arena.</li>
+              <li>Enter these areas prepared for combat.</li>
+              <li>No safe-zone abuse or exploit tactics.</li>
+              <li>Loot and combat are at your own risk.</li>
+            </ul>
           </article>
 
-          <article class="info-card">
-            <div class="card-icon" aria-hidden="true">🐝</div>
-            <h3>Work Together</h3>
-            <p>Team up, build your hive, stay organized, and protect your territory.</p>
+          <article class="rule-card danger-card">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">💣</span>
+              <div>
+                <span class="rule-number">03</span>
+                <h3>Raiding Rules</h3>
+              </div>
+            </div>
+            <ul>
+              <li>Raiding is only active during Raid Weekend.</li>
+              <li>Raid Weekend runs from Friday 7:30 AM EST until Monday 7:30 AM EST.</li>
+              <li>Outside of Raid Weekend, all bases are protected.</li>
+              <li>Players with active Offline Protection (Zorp) remain protected.</li>
+              <li>Offline Protection lasts a maximum of 24 hours after logging off.</li>
+              <li>No exploit raiding, glitch raiding, or cheating.</li>
+            </ul>
           </article>
 
-          <article class="info-card">
-            <div class="card-icon" aria-hidden="true">🎁</div>
-            <h3>Have Fun, Earn Big</h3>
-            <p>Enjoy the grind, take part in the action, and earn rewards through active play.</p>
+          <article class="rule-card purge-card" id="purge">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">🔥</span>
+              <div>
+                <span class="rule-number">04</span>
+                <h3>Purge Week</h3>
+              </div>
+            </div>
+            <ul>
+              <li>The final 7 days before wipe are Purge Week.</li>
+              <li>Raiding is active 24/7 during Purge Week.</li>
+              <li>Expect increased PvP, raids, and competition.</li>
+              <li>Players with active Offline Protection (Zorp) remain protected.</li>
+              <li>Offline Protection lasts a maximum of 24 hours after logging off.</li>
+            </ul>
           </article>
 
-          <article class="info-card">
-            <div class="card-icon" aria-hidden="true">💀</div>
-            <h3>Fight at Monuments</h3>
-            <p>PvP is allowed at monuments only, following the rule shown on the server poster.</p>
+          <article class="rule-card protection-card">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">🛡️</span>
+              <div>
+                <span class="rule-number">05</span>
+                <h3>Offline Protection</h3>
+              </div>
+            </div>
+            <ul>
+              <li>Offline Protection is provided through Zorp.</li>
+              <li>Protection only remains active for up to 24 hours after logging off.</li>
+              <li>Players must properly link and maintain their protection.</li>
+              <li>Abuse of Offline Protection systems is not allowed.</li>
+            </ul>
           </article>
 
-          <article class="info-card">
-            <div class="card-icon" aria-hidden="true">🔥</div>
-            <h3>Survive the Purge</h3>
-            <p>The final seven days are fully raidable, with 24/7 raiding active.</p>
+          <article class="rule-card">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">📜</span>
+              <div>
+                <span class="rule-number">06</span>
+                <h3>General Rules</h3>
+              </div>
+            </div>
+            <ul>
+              <li>No cheating, exploiting, scripting, or glitch abuse.</li>
+              <li>No harassment, racism, hate speech, or excessive toxicity.</li>
+              <li>Respect staff decisions.</li>
+              <li>Keep chat free from spam.</li>
+            </ul>
+          </article>
+
+          <article class="rule-card economy-card">
+            <div class="rule-heading">
+              <span class="rule-icon" aria-hidden="true">💰</span>
+              <div>
+                <span class="rule-number">07</span>
+                <h3>Trading &amp; Economy</h3>
+              </div>
+            </div>
+            <ul>
+              <li>No scamming or dishonest trades.</li>
+              <li>Use trade channels appropriately.</li>
+              <li>Report issues with proof when possible.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -204,15 +300,45 @@
 
     <section class="section" id="raid-info" aria-labelledby="raid-title">
       <div class="container">
-        <h2 class="section-heading" id="raid-title">Raid and Wipe Information</h2>
-        <p class="section-copy">
-          The standard weekly window opens Friday at 7:30 AM Eastern Time and closes Monday at 7:30 AM Eastern Time. During the final seven days, raiding becomes active around the clock.
-        </p>
+        <div class="raid-overview">
+          <div>
+            <span class="section-label">Know the Schedule</span>
+            <h2 class="section-heading" id="raid-title">Raid Weekend &amp; Purge Week</h2>
+            <p class="section-copy">
+              Normal raiding is active only from Friday at 7:30 AM EST until Monday at 7:30 AM EST.
+              During the final seven days before wipe, Purge Week overrides the normal schedule and raiding stays active 24/7.
+            </p>
+          </div>
+
+          <div class="raid-timeline" aria-label="Raid schedule summary">
+            <div class="timeline-row">
+              <span class="timeline-dot protected"></span>
+              <div>
+                <strong>Monday 7:30 AM → Friday 7:30 AM</strong>
+                <p>Raiding closed. Player bases are protected.</p>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-dot raid"></span>
+              <div>
+                <strong>Friday 7:30 AM → Monday 7:30 AM</strong>
+                <p>Raid Weekend active. Zorp protection still applies.</p>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-dot purge"></span>
+              <div>
+                <strong>Final 7 Days Before Wipe</strong>
+                <p>Purge Week active with 24/7 raiding. Zorp protection still applies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="raid-banner">
           <div>
-            <h3>Build your hive. Fight for your territory. Become a legend.</h3>
-            <p>Prepare before the window opens, coordinate with your team, and protect what you built.</p>
+            <h3>Build your Hive. Fight for your territory. Prepare for Raid Weekend. Survive the Purge.</h3>
+            <p>Rules apply to everyone. Report rule-breaking with clear proof whenever possible.</p>
           </div>
           <a class="primary-button" href="#timer">Check the Timer</a>
         </div>
@@ -222,9 +348,10 @@
     <section class="section" aria-labelledby="community-title">
       <div class="container">
         <div class="community">
+          <span class="community-mark" aria-hidden="true">🐝</span>
           <h2 id="community-title">Join the Honeycomb Oasis Community</h2>
           <p>
-            Get announcements, wipe updates, server information, support, and community discussion directly in Discord.
+            Get server announcements, wipe updates, support, trade discussion, and rule clarifications directly in Discord.
           </p>
           <a
             class="discord-button"
@@ -232,8 +359,9 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-          <span>Join Discord</span>
-        </a>
+            <span class="discord-icon" aria-hidden="true">◉</span>
+            <span>Join Discord</span>
+          </a>
         </div>
       </div>
     </section>
@@ -241,7 +369,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p><strong>Honeycomb Oasis 3X</strong> — Survive together. Dominate the oasis.</p>
+      <p><strong>Honeycomb Oasis 3X</strong> — Respect the Hive and play fair.</p>
       <p>Unofficial community server page. Rust is a trademark of Facepunch Studios.</p>
     </div>
   </footer>
